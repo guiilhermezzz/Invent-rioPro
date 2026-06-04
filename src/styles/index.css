@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: var(--font-sans);
+  --font-sans: 'Roboto, sans-serif';
+  --font-mono: 'Fira Code, monospace';
+  --font-serif: 'Playfair Display, serif';
+  --radius: 0.625rem;
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(242.1687 47.4286% 34.3137%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(242.1687 47.4286% 34.3137%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(242.1687 47.4286% 34.3137%);
+  --primary: hsl(258.3117 89.5349% 66.2745%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(252 100% 97.0588%);
+  --secondary-foreground: hsl(244.5205 57.9365% 50.5882%);
+  --muted: hsl(250 100% 97.6471%);
+  --muted-foreground: hsl(262.1229 83.2558% 57.8431%);
+  --accent: hsl(214.2857 94.5946% 92.7451%);
+  --accent-foreground: hsl(225.931 70.7317% 40.1961%);
+  --destructive: hsl(0 84.2365% 60.1961%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(226.4516 100% 93.9216%);
+  --input: hsl(226.4516 100% 93.9216%);
+  --ring: hsl(258.3117 89.5349% 66.2745%);
+  --chart-1: hsl(258.3117 89.5349% 66.2745%);
+  --chart-2: hsl(262.1229 83.2558% 57.8431%);
+  --chart-3: hsl(263.3898 69.9605% 50.3922%);
+  --chart-4: hsl(263.3557 69.3023% 42.1569%);
+  --chart-5: hsl(263.5 67.4157% 34.902%);
+  --sidebar: hsl(250 100% 97.6471%);
+  --sidebar-foreground: hsl(242.1687 47.4286% 34.3137%);
+  --sidebar-primary: hsl(258.3117 89.5349% 66.2745%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(214.2857 94.5946% 92.7451%);
+  --sidebar-accent-foreground: hsl(225.931 70.7317% 40.1961%);
+  --sidebar-border: hsl(226.4516 100% 93.9216%);
+  --sidebar-ring: hsl(258.3117 89.5349% 66.2745%);
+  --shadow-color: hsl(255 86% 66%);
+  --shadow-opacity: 0.2;
+  --shadow-blur: 4px;
+  --shadow-offset-x: 2px;
+  --shadow-offset-y: 2px;
+  --shadow: 2px 2px 4px 0px hsl(255 86% 66% / 0.2), 2px 1px 2px -1px hsl(255 86% 66% / 0.2);
+}
+
+html {
+  min-height: 100%;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+html.dark {
+  background-color: hsl(222.2222 47.3684% 11.1765%);
+  color: hsl(226.4516 100% 93.9216%);
+  --background: hsl(222.2222 47.3684% 11.1765%);
+  --foreground: hsl(226.4516 100% 93.9216%);
+  --card: hsl(243.75 47.0588% 20%);
+  --card-foreground: hsl(226.4516 100% 93.9216%);
+  --popover: hsl(243.75 47.0588% 20%);
+  --popover-foreground: hsl(226.4516 100% 93.9216%);
+  --primary: hsl(258.3117 89.5349% 66.2745%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(243.75 47.0588% 20%);
+  --secondary-foreground: hsl(226.4516 100% 93.9216%);
+  --muted: hsl(243.5294 56.044% 17.8431%);
+  --muted-foreground: hsl(252.5 94.7368% 85.098%);
+  --accent: hsl(244.5205 57.9365% 50.5882%);
+  --accent-foreground: hsl(226.4516 100% 93.9216%);
+  --destructive: hsl(0 84.2365% 60.1961%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(261.1765 72.6496% 22.9412%);
+  --input: hsl(261.1765 72.6496% 22.9412%);
+  --ring: hsl(258.3117 89.5349% 66.2745%);
+  --chart-1: hsl(255.1351 91.7355% 76.2745%);
+  --chart-2: hsl(258.3117 89.5349% 66.2745%);
+  --chart-3: hsl(262.1229 83.2558% 57.8431%);
+  --chart-4: hsl(263.3898 69.9605% 50.3922%);
+  --chart-5: hsl(263.3557 69.3023% 42.1569%);
+  --sidebar: hsl(222.2222 47.3684% 11.1765%);
+  --sidebar-foreground: hsl(226.4516 100% 93.9216%);
+  --sidebar-primary: hsl(258.3117 89.5349% 66.2745%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(244.5205 57.9365% 50.5882%);
+  --sidebar-accent-foreground: hsl(226.4516 100% 93.9216%);
+  --sidebar-border: hsl(261.1765 72.6496% 22.9412%);
+  --sidebar-ring: hsl(258.3117 89.5349% 66.2745%);
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.3);
+}
