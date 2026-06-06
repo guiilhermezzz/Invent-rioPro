@@ -1,14 +1,7 @@
 # InventárioPro
 
 Projeto inicial para uma aplicação Vite + React + TypeScript + Tailwind CSS com autenticação Supabase e tela de inventário.
-
-## Passos iniciais
-
-1. Copie `.env.example` para `.env`
-2. Preencha `VITE_SUPABASE_URL` e `VITE_SUPABASE_ANON_KEY`
-3. Rode `npm install`
-4. Rode `npm run dev`
-
+
 ## Estrutura
 
 - `src/components` — componentes reutilizáveis
